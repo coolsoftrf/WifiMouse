@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffe1e2e3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <AbsoluteLayout android:orientation="vertical" android:id="@id/al_left" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textColor="#ff000000" android:id="@id/bt_cus_up" android:background="@drawable/selector_gamekey_up" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <Button android:textColor="#ff000000" android:id="@id/bt_cus_down" android:background="@drawable/selector_gamekey_down" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <Button android:textColor="#ff000000" android:id="@id/bt_cus_left" android:background="@drawable/selector_gamekey_left" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <Button android:textColor="#ff000000" android:id="@id/bt_cus_right" android:background="@drawable/selector_gamekey_right" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <Button android:textColor="#ff000000" android:id="@id/bt_cus1" android:background="@drawable/selector_game_key_blue" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <Button android:textColor="#ff000000" android:id="@id/bt_cus2" android:background="@drawable/selector_game_key_green" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <Button android:textColor="#ff000000" android:id="@id/bt_cus3" android:background="@drawable/selector_game_key_red" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <Button android:textColor="#ff000000" android:id="@id/bt_cus4" android:background="@drawable/selector_game_key_yellow" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <Button android:textColor="#ff000000" android:id="@id/bt_big1" android:background="@drawable/selector_gamekey2" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <Button android:textColor="#ff000000" android:id="@id/bt_big2" android:background="@drawable/selector_gamekey2" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <ImageView android:id="@id/iv_divide" android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_a" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="a" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_b" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="b" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_c" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="c" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_d" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="d" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_e" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="e" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_f" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="f" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_g" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="g" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_h" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="h" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_i" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="i" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_j" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="j" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_k" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="k" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_l" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="l" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_m" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="m" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_n" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="n" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_o" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="o" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_p" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="p" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_q" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="q" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_r" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="r" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_s" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="s" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_t" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="t" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_u" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="u" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_v" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="v" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_w" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="w" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_x" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="x" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_y" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="y" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_z" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="z" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_space" android:background="@drawable/selector_gamekey2" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="space" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_up" android:background="@drawable/selector_gamekey_small_up" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_left" android:background="@drawable/selector_gamekey_small_left" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_right" android:background="@drawable/selector_gamekey_small_right" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_down" android:background="@drawable/selector_gamekey_small_down" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_esc" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="esc" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_shift" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="shift" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_ctrl" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="ctrl" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_alt" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="alt" />
+        <Button android:textColor="#ff6e6f71" android:id="@id/bt_enter" android:background="@drawable/selector_gamekey" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="enter" />
+        <Button android:id="@id/iv_first_selected" android:background="@mipmap/ic_gamekey_selected" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+        <Button android:id="@id/iv_second_selected" android:background="@mipmap/ic_gamekey_selected" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <Button android:id="@id/bt_show_notice_bg" android:background="@mipmap/ic_gesture_notice_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <Button android:id="@id/bt_show_notice" android:background="@mipmap/ic_gesture_notice" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </AbsoluteLayout>
+</LinearLayout>

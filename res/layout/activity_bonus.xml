@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff1c2937" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="#ff202e3e" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_marginTop="3.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_back" android:background="@mipmap/ic_settings_back" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffa6abb2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="25.0dip" android:text="@string/setting_bonus" />
+    </LinearLayout>
+    <View android:background="@mipmap/top_fragment_bg" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <com.necta.wifimouse.HD.trial.widget.AutoAdjustHeightImageView android:background="@mipmap/ic_bonus_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="#ff79828b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="20.0dip" android:text="Bonus features include media player controller, full screen landscape keyboard and all in-app features.Share WiFi Mouse on Facebook to get all features. And enjoy all features in 14 days." android:layout_weight="1.0" />
+        <Button android:layout_gravity="center" android:id="@id/bt_share" android:background="@drawable/selector_bonus_share" android:layout_width="280.0dip" android:layout_height="50.0dip" android:layout_marginBottom="70.0dip" />
+    </LinearLayout>
+</LinearLayout>

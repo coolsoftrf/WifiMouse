@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeaedf1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_marginTop="3.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_back" android:background="@mipmap/ic_settings_back" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_redragon_icon" android:background="@mipmap/ic_redragon_icon" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="22.0sp" android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" android:text="Redragon" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@mipmap/top_fragment_bg" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+            <com.necta.wifimouse.HD.trial.widget.AutoAdjustHeightImageView android:background="@mipmap/ic_redragon_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="60.0dip" android:text="Redragon CENTROPHORUS-2000 DPI Gaming Mouse for PC, 6 Buttons, Weight Tuning Set." />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <ImageView android:background="@mipmap/ic_redraon_detail_picture" android:layout_width="150.0dip" android:layout_height="160.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:text="Adjustable up to 2000 DPI, 4000 FPS, and 15G acceleration\n6 buttons, and an 8-piece weight tuning set (2.4g x 8) \nDurable smooth TEFLON feet and contoured body for ultimate gaming control.\nQuality ABS construction and two programmable side buttons \n6ft high-strength braided fiber cable, anti-skid scroll wheel, and red backlighting" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:layout_gravity="center" android:id="@id/bt_purchase" android:background="@drawable/selector_redragon_purchase" android:layout_width="300.0dip" android:layout_height="46.0dip" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

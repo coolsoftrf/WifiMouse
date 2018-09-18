@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff1c2937" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="#ff202e3e" android:layout_width="fill_parent" android:layout_height="59.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_back" android:background="@mipmap/ic_settings_back" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffa6abb2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="25.0dip" android:text="@string/setting_message" />
+    </LinearLayout>
+    <View android:background="@mipmap/top_fragment_bg" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_newm" android:background="#ff202e3e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="#ff202e3e" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/iv_icon" android:background="@mipmap/ic_message_flag" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="#ff202e3e" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="20.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="17.0sp" android:textColor="#ffd2d5d8" android:layout_gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="No message" android:lines="1" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="center" android:background="@mipmap/ic_message_jiantou" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" />
+                </LinearLayout>
+                <ImageView android:background="#ff202e3e" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ff202e3e" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#ff90979f" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="No message" android:lines="4" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+                <TextView android:textColor="#ff4d5865" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FROM WiFi Mouse" android:layout_weight="1.0" />
+                <TextView android:textColor="#ff4d5865" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016.06.03" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="#ff49545f" android:id="@id/tv_alsolike" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:text="Since you like this app, you may also enjoy:" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_native" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" />
+</LinearLayout>

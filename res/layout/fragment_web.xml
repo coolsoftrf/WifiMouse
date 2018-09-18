@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff1c2937" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@mipmap/top_fragment_bg" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <AbsoluteLayout android:orientation="vertical" android:id="@id/al_vtouch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <View android:id="@id/mac_touchpad_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0px" android:layout_marginTop="0.0px" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_circle0" android:background="@mipmap/cursor" android:visibility="invisible" android:layout_width="50.0px" android:layout_height="50.0px" />
+        <ImageView android:id="@id/iv_circle1" android:background="@mipmap/cursor" android:visibility="invisible" android:layout_width="50.0px" android:layout_height="50.0px" />
+        <ImageView android:id="@id/iv_circle2" android:background="@mipmap/cursor" android:visibility="invisible" android:layout_width="50.0px" android:layout_height="50.0px" />
+        <ImageView android:id="@id/iv_circle3" android:background="@mipmap/cursor" android:visibility="invisible" android:layout_width="50.0px" android:layout_height="50.0px" />
+        <android.gesture.GestureOverlayView android:id="@id/gesture_overlay_view_test" android:background="#ff131c25" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gestureColor="#ff09dee7" android:gestureStrokeType="multiple" />
+        <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" ads:adSize="BANNER" ads:adUnitId="ca-app-pub-9547697495864111~1474018383" xmlns:ads="http://schemas.android.com/apk/res-auto" />
+        <Button android:id="@id/bt_show_gesture" android:background="@mipmap/ic_gesture_nor" android:layout_width="60.0dip" android:layout_height="40.0dip" />
+    </AbsoluteLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ff202e3e" android:layout_width="fill_parent" android:layout_height="272.0dip">
+        <android.support.v7.widget.GridLayout android:layout_width="fill_parent" android:layout_height="160.0dip" app:orientation="horizontal" app:rowCount="2" app:columnCount="4">
+            <ImageView android:id="@id/bt_back" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_webpage_back" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/bt_home" android:clickable="true" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/selector_home" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/bt_forward" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_webpage_forward" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/bt_refresh" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_refresh" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/bt_zoomin" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_zoomin" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/bt_zoomout" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_zoomout" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/bt_close" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_close" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/bt_newpage" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_newpage" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+        </android.support.v7.widget.GridLayout>
+        <View android:background="#ff374352" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="#ff202e3e" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="112.0dip">
+            <android.support.v7.widget.RecyclerView android:id="@id/rv_web_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

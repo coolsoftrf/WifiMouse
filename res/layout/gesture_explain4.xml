@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:background="@mipmap/ic_gesture_explain_show6" android:layout_width="98.0dip" android:layout_height="98.0dip" android:layout_marginTop="60.0dip" />
+    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/touchpad_gesture_6" />
+    <Button android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/bt_exit" android:background="@drawable/selector_explain_exit" android:layout_width="125.0dip" android:layout_height="30.0dip" android:layout_marginTop="60.0dip" android:text="@string/touchpad_start" />
+</LinearLayout>

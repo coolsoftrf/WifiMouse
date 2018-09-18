@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_game" android:background="@mipmap/ic_game_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <AbsoluteLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/bt_keyconfig" android:background="@mipmap/ic_game_setting_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+            <ImageView android:id="@id/iv_touch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0px" android:layout_marginTop="0.0px" android:layout_alignParentTop="true" android:layout_centerInParent="false" />
+            <ImageView android:id="@id/bt_circle_bg1" android:background="@mipmap/ic_game_bing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/bt_up" android:background="@mipmap/ic_game_key_up_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/bt_left" android:background="@mipmap/ic_game_key_left_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/bt_right" android:background="@mipmap/ic_game_key_right_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/bt_down" android:background="@mipmap/ic_game_key_down_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/bt_big1" android:background="@drawable/selector_game_key_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/bt_circle_bg2" android:background="@mipmap/ic_game_bing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/bt_cus1" android:background="@mipmap/ic_game_key_blue_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/bt_cus2" android:background="@mipmap/ic_game_key_green_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/bt_cus3" android:background="@mipmap/ic_game_key_red_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/bt_cus4" android:background="@mipmap/ic_game_key_yellow_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/bt_big2" android:background="@drawable/selector_game_key_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </AbsoluteLayout>
+    </LinearLayout>
+</LinearLayout>

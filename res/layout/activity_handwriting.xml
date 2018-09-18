@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff1c2937" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="#ff202e3e" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_marginTop="3.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_setting_back" android:background="@mipmap/ic_settings_back" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffa6abb2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="25.0dip" android:text="@string/hw_handwriting" />
+    </LinearLayout>
+    <View android:background="@mipmap/top_fragment_bg" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/rl_buy_pro" android:background="@drawable/selector_setting_bg" android:layout_width="fill_parent" android:layout_height="59.0dip">
+                <ImageView android:gravity="center" android:id="@id/iv_icon_basic" android:background="@mipmap/ic_tab_touchpad_sel" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+                <TextView android:textSize="19.0sp" android:textColor="#ff666666" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="15.0dip" android:text="@string/hw_basic" android:layout_toRightOf="@id/iv_icon_basic" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.necta.wifimouse.HD.trial.widget.AutoAdjustHeightImageView android:background="@mipmap/ic_hw_basic" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/rl_mediaplayer" android:background="@drawable/selector_setting_bg" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:gravity="center" android:id="@id/iv_mediaplayer" android:background="@mipmap/ic_tab_mediaplayer_sel" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+                <TextView android:textSize="19.0sp" android:textColor="#ff666666" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="15.0dip" android:text="@string/hw_mediaplayer" android:layout_toRightOf="@id/iv_mediaplayer" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.necta.wifimouse.HD.trial.widget.AutoAdjustHeightImageView android:background="@mipmap/ic_hw_mediaplayer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/rl_presentation" android:background="@drawable/selector_setting_bg" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:gravity="center" android:id="@id/iv_presentation" android:background="@mipmap/ic_tab_presentation_sel" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+                <TextView android:textSize="19.0sp" android:textColor="#ff666666" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="15.0dip" android:text="@string/hw_presentation" android:layout_toRightOf="@id/iv_presentation" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.necta.wifimouse.HD.trial.widget.AutoAdjustHeightImageView android:background="@mipmap/ic_hw_presentation" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/rl_browser" android:background="@drawable/selector_setting_bg" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:gravity="center" android:id="@id/iv_browser" android:background="@mipmap/ic_tab_web_sel" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+                <TextView android:textSize="19.0sp" android:textColor="#ff666666" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="15.0dip" android:text="@string/hw_browser" android:layout_toRightOf="@id/iv_browser" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.necta.wifimouse.HD.trial.widget.AutoAdjustHeightImageView android:background="@mipmap/ic_hw_browser" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

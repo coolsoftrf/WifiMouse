@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/win_touchpad_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="234.0dip">
+        <android.support.percent.PercentRelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <RelativeLayout android:id="@id/rl_win_close_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" app:layout_widthPercent="16.999996%">
+                <ImageView android:id="@id/iv_win_close" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@mipmap/ic_close_window" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="#ffeaedf1" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_toLeftOf="@id/rl_win_close_container" />
+            <RelativeLayout android:id="@id/rl_win_maximize_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/rl_win_close_container" app:layout_widthPercent="16.999996%">
+                <ImageView android:id="@id/iv_win_maximize" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@mipmap/ic_win_maximize_window" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="#ffeaedf1" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_toLeftOf="@id/rl_win_maximize_container" />
+            <RelativeLayout android:id="@id/rl_win_minimize_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/rl_win_maximize_container" app:layout_widthPercent="15.999996%">
+                <ImageView android:id="@id/iv_win_minimize" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@mipmap/ic_minimize_window" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="#ffeaedf1" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_toLeftOf="@id/rl_win_minimize_container" />
+        </android.support.percent.PercentRelativeLayout>
+        <View android:background="#ffeaedf1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <android.support.percent.PercentRelativeLayout android:layout_width="fill_parent" android:layout_height="64.0dip">
+            <RelativeLayout android:id="@id/rl_win_desktop_container" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_widthPercent="50.0%">
+                <ImageView android:id="@id/iv_win_show_desktop" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_show_desktop" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="#ffeaedf1" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_toRightOf="@id/rl_win_desktop_container" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/rl_win_desktop_container" app:layout_widthPercent="50.0%">
+                <ImageView android:id="@id/iv_win_multi_window" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_multi_window" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
+        <View android:background="#ffeaedf1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <android.support.v7.widget.GridLayout android:layout_width="fill_parent" android:layout_height="127.0dip" app:orientation="horizontal" app:rowCount="2" app:columnCount="3">
+            <ImageView android:id="@id/iv_win_account_switch" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_account_switch" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/iv_win_logout" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_logout" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/iv_win_lock" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_lock" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/iv_win_restart" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_restart" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/iv_win_letter_shift" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_letter_shift" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/iv_win_shutdown" android:clickable="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/selector_shutdown" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+</LinearLayout>

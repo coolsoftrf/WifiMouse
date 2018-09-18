@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_scan_all" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/ic_scan_device_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center_horizontal" android:background="@mipmap/scan_button_bg" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginTop="23.0dip">
+                <ImageView android:id="@id/iv_radar_outer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_annular_outter" />
+                <FrameLayout android:layout_gravity="center" android:layout_width="76.0dip" android:layout_height="76.0dip">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_mouse" android:scaleType="fitCenter" />
+                    <ImageView android:layout_gravity="center|top" android:id="@id/iv_signal" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+                </FrameLayout>
+            </FrameLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_scanning" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/scan_scanning" android:layout_centerInParent="true" />
+                <Button android:layout_gravity="center_horizontal" android:id="@id/bt_scan_faqs" android:background="@drawable/selector_scan_faqs" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="25.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="152.0dip" android:animateLayoutChanges="true">
+                <android.support.v7.widget.RecyclerView android:id="@id/recycler_device_list" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="67.0dip" android:layout_marginLeft="36.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="36.0dip" android:overScrollMode="never" />
+                <Button android:layout_gravity="center" android:id="@id/bt_show_edit_ip" android:background="@mipmap/ic_edit_ip" android:visibility="visible" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginTop="30.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_edit_ip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <Button android:layout_gravity="center_vertical" android:id="@id/bt_man_link" android:background="@mipmap/input_dic" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="36.0dip" android:scaleType="fitCenter" />
+                    <EditText android:textColor="#ffffffff" android:textColorHint="#50ffffff" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/edt_input_ip" android:layout_width="180.0dip" android:layout_height="43.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="80.0dip" android:hint="@string/scan_manually_ip" android:digits="0123456789." android:inputType="numberDecimal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.GridLayout android:id="@id/gl_shutdown" android:background="@mipmap/ic_bottom_bg" android:layout_width="fill_parent" android:layout_height="80.0dip" app:orientation="horizontal" app:rowCount="1" app:columnCount="4">
+            <ImageView android:id="@id/iv_mac_logout" android:clickable="true" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/selector_logout" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/iv_mac_restart" android:clickable="true" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/selector_restart" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/iv_mac_sleep" android:clickable="true" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/selector_letter_shift" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+            <ImageView android:id="@id/iv_mac_shutdown" android:clickable="true" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/selector_shutdown" android:scaleType="fitCenter" app:layout_rowWeight="1.0" app:layout_columnWeight="1.0" app:layout_gravity="center" />
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+</LinearLayout>

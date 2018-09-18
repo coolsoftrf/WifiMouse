@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/ic_dialog_bg" android:padding="20.0dip" android:layout_width="300.0dip" android:layout_height="180.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="34.0dip">
+        <EditText android:textColor="#ff666666" android:textColorHint="#ff7f8995" android:id="@id/edt_dialog_input_name" android:background="@mipmap/ic_dialog_edittext_bg" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/web_add_name" android:singleLine="true" android:textCursorDrawable="@mipmap/ic_edittext_cursor" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginTop="10.0dip">
+        <EditText android:textColor="#ff666666" android:textColorHint="#ff7f8995" android:id="@id/edt_dialog_input" android:background="@mipmap/ic_dialog_edittext_bg" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="http://" android:singleLine="true" android:textCursorDrawable="@mipmap/ic_edittext_cursor" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="15.0dip">
+        <Button android:textSize="12.0sp" android:textColor="#ffd4d8dc" android:id="@id/btn_dialog_cancel" android:background="@mipmap/ic_dialog_left_btn" android:layout_width="110.0dip" android:layout_height="36.0dip" android:layout_marginRight="10.0dip" android:text="@string/web_add_cancel" android:layout_weight="1.0" />
+        <Button android:textSize="12.0sp" android:textColor="#ffd4d8dc" android:id="@id/btn_dialog_ok" android:background="@mipmap/ic_dialog_right_btn" android:layout_width="110.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:text="@string/web_add_ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

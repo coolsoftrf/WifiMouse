@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff1c2937" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="#ff202e3e" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_marginTop="3.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_setting_back" android:background="@mipmap/ic_settings_back" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffa6abb2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="25.0dip" android:text="@string/setting_FAQ" />
+    </LinearLayout>
+    <View android:background="@mipmap/top_fragment_bg" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <WebView android:id="@id/wv_faqs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>
