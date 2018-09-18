@@ -10,7 +10,6 @@
         <ImageView android:id="@id/iv_circle3" android:background="@mipmap/cursor" android:visibility="invisible" android:layout_width="50.0px" android:layout_height="50.0px" />
         <android.gesture.GestureOverlayView android:id="@id/gesture_overlay_view_test" android:background="#ff131c25" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gestureColor="#ff09dee7" android:gestureStrokeType="multiple" />
         <Button android:id="@id/bt_show_gesture" android:background="@mipmap/ic_gesture_nor" android:layout_width="60.0dip" android:layout_height="40.0dip" />
-        <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" ads:adSize="BANNER" ads:adUnitId="ca-app-pub-3940256099942544/6300978111" xmlns:ads="http://schemas.android.com/apk/res-auto" />
         <Button android:id="@id/bt_handwriting_help" android:background="@drawable/selector_handwriting_help" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     </AbsoluteLayout>
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="128.0dip">

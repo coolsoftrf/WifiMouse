@@ -22,67 +22,6 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/necta/wifimouse/HD/trial/activity/MainActivity;)Lcom/google/android/gms/ads/InterstitialAd;
-    .locals 1
-
-    .prologue
-    .line 35
-    iget-object v0, p0, Lcom/necta/wifimouse/HD/trial/activity/MainActivity;->n:Lcom/google/android/gms/ads/InterstitialAd;
-
-    return-object v0
-.end method
-
-.method private g()V
-    .locals 3
-
-    .prologue
-    .line 40
-    new-instance v0, Lcom/google/android/gms/ads/InterstitialAd;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/ads/InterstitialAd;-><init>(Landroid/content/Context;)V
-
-    iput-object v0, p0, Lcom/necta/wifimouse/HD/trial/activity/MainActivity;->n:Lcom/google/android/gms/ads/InterstitialAd;
-
-    .line 41
-    iget-object v0, p0, Lcom/necta/wifimouse/HD/trial/activity/MainActivity;->n:Lcom/google/android/gms/ads/InterstitialAd;
-
-    const-string v1, "ca-app-pub-9547697495864111/1453978941"
-
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/ads/InterstitialAd;->setAdUnitId(Ljava/lang/String;)V
-
-    .line 43
-    new-instance v0, Lcom/google/android/gms/ads/AdRequest$Builder;
-
-    invoke-direct {v0}, Lcom/google/android/gms/ads/AdRequest$Builder;-><init>()V
-
-    const-string v1, "CCAFE0A74BC427C3B82D81CE2D72D0B6"
-
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/ads/AdRequest$Builder;->addTestDevice(Ljava/lang/String;)Lcom/google/android/gms/ads/AdRequest$Builder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/google/android/gms/ads/AdRequest$Builder;->build()Lcom/google/android/gms/ads/AdRequest;
-
-    move-result-object v0
-
-    .line 44
-    iget-object v1, p0, Lcom/necta/wifimouse/HD/trial/activity/MainActivity;->n:Lcom/google/android/gms/ads/InterstitialAd;
-
-    new-instance v2, Lcom/necta/wifimouse/HD/trial/activity/MainActivity$1;
-
-    invoke-direct {v2, p0}, Lcom/necta/wifimouse/HD/trial/activity/MainActivity$1;-><init>(Lcom/necta/wifimouse/HD/trial/activity/MainActivity;)V
-
-    invoke-virtual {v1, v2}, Lcom/google/android/gms/ads/InterstitialAd;->setAdListener(Lcom/google/android/gms/ads/AdListener;)V
-
-    .line 56
-    iget-object v1, p0, Lcom/necta/wifimouse/HD/trial/activity/MainActivity;->n:Lcom/google/android/gms/ads/InterstitialAd;
-
-    invoke-virtual {v1, v0}, Lcom/google/android/gms/ads/InterstitialAd;->loadAd(Lcom/google/android/gms/ads/AdRequest;)V
-
-    .line 57
-    return-void
-.end method
-
 
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
@@ -255,17 +194,7 @@
     .line 104
     invoke-virtual {v0}, Lcom/necta/wifimouse/HD/trial/util/h;->g()Z
 
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    .line 105
-    invoke-direct {p0}, Lcom/necta/wifimouse/HD/trial/activity/MainActivity;->g()V
-
     .line 107
-    :cond_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x9
