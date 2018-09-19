@@ -196,172 +196,6 @@
     goto :goto_0
 .end method
 
-.method private O()V
-    .locals 8
-
-    .prologue
-    .line 334
-    :try_start_0
-    iget-object v1, p0, Lcom/necta/wifimouse/HD/trial/b/e;->ay:Lcom/a/a/a/a;
-
-    const/4 v2, 0x3
-
-    invoke-virtual {p0}, Lcom/necta/wifimouse/HD/trial/b/e;->g()Landroid/support/v4/app/m;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/support/v4/app/m;->getPackageName()Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v4, "mediacontroller"
-
-    const-string v5, "inapp"
-
-    const-string v6, "bGoa+V7g/yqDXvKRqq+JTFn4uQZbPiQJo4pf9RzJ"
-
-    invoke-interface/range {v1 .. v6}, Lcom/a/a/a/a;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
-
-    move-result-object v1
-
-    .line 336
-    const-string v2, "RESPONSE_CODE"
-
-    invoke-virtual {v1, v2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
-
-    move-result v2
-
-    .line 338
-    const-string v3, "mediacontroller"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "start to buy"
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 340
-    if-nez v2, :cond_1
-
-    .line 341
-    const-string v2, "BUY_INTENT"
-
-    invoke-virtual {v1, v2}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
-
-    move-result-object v1
-
-    move-object v0, v1
-
-    check-cast v0, Landroid/app/PendingIntent;
-
-    move-object v2, v0
-
-    .line 342
-    invoke-virtual {p0}, Lcom/necta/wifimouse/HD/trial/b/e;->g()Landroid/support/v4/app/m;
-
-    move-result-object v1
-
-    invoke-virtual {v2}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
-
-    move-result-object v2
-
-    const/16 v3, 0x3e9
-
-    new-instance v4, Landroid/content/Intent;
-
-    invoke-direct {v4}, Landroid/content/Intent;-><init>()V
-
-    const/4 v5, 0x0
-
-    .line 343
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
-
-    move-result v5
-
-    const/4 v6, 0x0
-
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
-
-    move-result v6
-
-    const/4 v7, 0x0
-
-    .line 344
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
-
-    move-result v7
-
-    .line 342
-    invoke-virtual/range {v1 .. v7}, Landroid/support/v4/app/m;->startIntentSenderForResult(Landroid/content/IntentSender;ILandroid/content/Intent;III)V
-
-    .line 354
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 345
-    :cond_1
-    const/4 v1, 0x7
-
-    if-ne v2, v1, :cond_0
-
-    .line 346
-    new-instance v1, Lcom/necta/wifimouse/HD/trial/util/h;
-
-    invoke-virtual {p0}, Lcom/necta/wifimouse/HD/trial/b/e;->g()Landroid/support/v4/app/m;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Lcom/necta/wifimouse/HD/trial/util/h;-><init>(Landroid/content/Context;)V
-
-    .line 347
-    invoke-virtual {v1}, Lcom/necta/wifimouse/HD/trial/util/h;->j()V
-
-    .line 348
-    const/4 v1, 0x1
-
-    iput-boolean v1, p0, Lcom/necta/wifimouse/HD/trial/b/e;->b:Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    .line 351
-    :catch_0
-    move-exception v1
-
-    .line 352
-    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
-
-    goto :goto_0
-.end method
-
 .method static synthetic a(Lcom/necta/wifimouse/HD/trial/b/e;)Landroid/widget/ImageView;
     .locals 1
 
@@ -436,8 +270,6 @@
     .locals 0
 
     .prologue
-    .line 43
-    invoke-direct {p0}, Lcom/necta/wifimouse/HD/trial/b/e;->O()V
 
     return-void
 .end method
@@ -1293,12 +1125,7 @@
     const/4 v1, 0x1
 
     .line 360
-    iget-boolean v0, p0, Lcom/necta/wifimouse/HD/trial/b/e;->b:Z
-
-    if-nez v0, :cond_0
-
-    .line 361
-    invoke-direct {p0}, Lcom/necta/wifimouse/HD/trial/b/e;->O()V
+    goto :cond_0
 
     .line 400
     :goto_0
